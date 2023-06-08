@@ -31,6 +31,15 @@ void frictional_force(float coeff_friction,float newton)
         cout<<ff<<endl;
     }
 
+//to find the area of a rectangle or square
+void area_of_rectangle(float length,float breadth)
+    {
+        float area = length*breadth;
+        cout<<area<<endl;
+    }
+
+
+
 int main(){
     //resultant of two vectors
     int Force_1,Force_2,Angle;
@@ -49,6 +58,13 @@ int main(){
     cout<<"enter the coefficient of friction and reaction force"<<endl;
     cin>>coefficientOfFriction>>reactionForce;
     frictional_force(coefficientOfFriction,reactionForce);
+
+    //area of rectangle
+    float length,breadth;
+    cout<<"enter length and breadth of rectangle"<<endl;
+    cin>>length>>breadth;
+    area_of_rectangle(length,breadth);
+
     
 
     return 0;
