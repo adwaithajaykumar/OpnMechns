@@ -5,43 +5,46 @@ using std::cin;
 using std::cout;
 using std::endl;
 //we use the above lines instead of using namespace std; for space savings
-void resultant_of_two_vectors(float a,float b,float c)
+float resultant_of_two_vectors(float a,float b,float c)
     {
     
     float d;
     d=sqrt((a*a)+(b*b)+(2*a*b*cos(c*(M_PI/180))));
     cout<<d<<"newtons"<<endl;
-    //return 0;
+    return d;
     //try to update with the angle the resultant makes with the x and y axis.
     
     }
 
-void area_of_circle(float radius)
+float area_of_circle(float radius)
     {
         float area = M_PI*radius*radius;
         cout<<area<<"metre square"<<endl;
-        //return 0;
+        return area;
     }
 
     //to find the firctional force,coeff_friction can be of kinamtic or static friction
 
-void frictional_force(float coeff_friction,float newton)
+float frictional_force(float coeff_friction,float newton)
     {
         float ff = coeff_friction*newton;
         cout<<ff<<endl;
+        return ff;
     }
 
 //to find the area of a rectangle or square
-void area_of_rectangle(float length,float breadth)
+float area_of_rectangle(float length,float breadth)
     {
         float area = length*breadth;
         cout<<area<<endl;
+        return area;
     }
 
-void force(float mass,float accln)
+float force(float mass,float accln)
     {
         float force = mass*accln;
         cout<<force<<endl;
+        return force;
     }
 
 
