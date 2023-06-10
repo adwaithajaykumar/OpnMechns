@@ -38,6 +38,12 @@ void area_of_rectangle(float length,float breadth)
         cout<<area<<endl;
     }
 
+void force(float mass,float accln)
+    {
+        float force = mass*accln;
+        cout<<force<<endl;
+    }
+
 
 
 int main(){
@@ -64,6 +70,12 @@ int main(){
     cout<<"enter length and breadth of rectangle"<<endl;
     cin>>length>>breadth;
     area_of_rectangle(length,breadth);
+
+    //force equation
+    float mass,acceleration;
+    cout<<"enter mass and acceleration"<<endl;
+    cin>>mass>>acceleration;
+    force(mass,acceleration);
 
     
 
